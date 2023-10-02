@@ -1,4 +1,4 @@
 
 My Portfolio Website
 
-The site is live at : https://dharmik79.github.io/portfolio.github.io/
+The site is live at : https://trushil.github.io/portfolio/
