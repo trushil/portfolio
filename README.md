@@ -1,4 +1,3 @@
 
-My Portfolio Website
+My Portfolio: https://trushil.github.io/portfolio/
 
-The site is live at : https://trushil.github.io/portfolio/
