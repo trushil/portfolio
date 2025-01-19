@@ -298,15 +298,7 @@
                                           <span class="close">&times;</span>
                                           <h2>Education</h2>
                                           <hr>
-                                          <!--
-                                          <iframe src="/docs/Msc.pdf" style="width:100%;height:100%;"></iframe>
-
-                                          <div>
-                                             <object data="/docs/Msc.pdf" type="application/pdf">
-                                                 alt : <a href="test.pdf">test.pdf</a>
-                                             </object>
-                                         </div>
-                                         -->
+               
                                           <li><strong style="color:#9FE2BF"><a href="https://www.uregina.ca/"
                                                    target="_blank" style="color:dimgray">Master's degree, Computer Science –
                                                    <span style="color:#9FE2BF">University of Regina
@@ -318,7 +310,6 @@
                                                    href="https://www.charusat.ac.in/" target="_blank"
                                                    style="color:dimgray">Bachelor's degree, Computer Engineering –
                                                    <span style="color:#9FE2BF">Charotar University of Science and Technology</span></a></strong>
-                                          
                                           
                                        </div>
                                     
@@ -378,7 +369,33 @@
                                     
                                     </div>
 
+                                    <div id="awards_modal" class="modal">
+
+                                       <!-- Modal content -->
+                                       <div class="modal-content">
+
+                                          <span class="close">&times;</span>
+                                          <h2>Awards</h2>
+                                          <hr>
+               
+                                          <li><strong style="color:#9FE2BF"><a href="https://www.uregina.ca/"
+                                                   target="_blank" style="color:dimgray">
+                                                   Deputy Minister Award - Trailblazer Award 2023 –
+                                                   <span style="color:#9FE2BF">Ministry of Energy and Resources
+                                                   </span></a></strong>
+                                                   <div >
+                                                   <embed type="application/pdf" src="docs/DM_Traiblazer_ Award.pdf#toolbar=0" width="100%" height="550px">
+                                                   </div>
+                                          <li><strong style="color:#9FE2BF"><a
+                                                   href="https://www.charusat.ac.in/" target="_blank"
+                                                   style="color:dimgray">Deputy Minister Award - Trailblazer Award 2023 –
+                                                   <span style="color:#9FE2BF">Ministry of Energy and Resources</span></a></strong>
+                                                   <div >
+                                                      <embed type="application/pdf" src="docs/DM_Award_Nomination_Letter.pdf#toolbar=0" width="100%" height="550px">
+                                                   </div>
+                                       </div>
                                     
+                                    </div>
                                     
                         </div>
                      </div>
@@ -912,14 +929,17 @@
       // Get the modal
       var certificate_modal = document.getElementById("certificate_modal");
       var education_modal = document.getElementById("education_modal");
+      var awards_modal = document.getElementById("awards_modal");
       
       // Get the button that opens the modal
       var certificate_button = document.getElementById("certificate_button");
       var education_button = document.getElementById("education_button");
+      var awards_button = document.getElementById("awards_button");
 
       // Get the <span> element that closes the modal
          var education_close_span = document.getElementsByClassName("close")[0];
          var certificate_close_span = document.getElementsByClassName("close")[1];
+         var awards_close_span = document.getElementsByClassName("close")[2];
       
       
       // When the user clicks the button, open the modal 
@@ -931,6 +951,10 @@
          education_modal.style.display = "block";
       }
 
+      awards_button.onclick = function() {
+         awards_modal.style.display = "block";
+      }
+
       // When the user clicks on <span> (x), close the modal
       certificate_close_span.onclick = function() {
          certificate_modal.style.display = "none"; 
@@ -940,6 +964,10 @@
          education_modal.style.display = "none";
       }
       
+      awards_close_span.onclick = function() {
+         awards_modal.style.display = "none";
+      }
+
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         if (event.target == certificate_modal) {
@@ -947,6 +975,9 @@
         }
         if (event.target == education_modal) {
          education_modal.style.display = "none";
+        }
+        if (event.target == awards_modal) {
+         awards_modal.style.display = "none";
         }
       }
       </script>
